@@ -4,9 +4,15 @@ import Location from '../../assets/icons/location.svg';
 import Services from '../../assets/icons/services.svg';
 import Clients from '../../assets/icons/clients.svg';
 import Attendance from '../../assets/icons/attendance.svg';
-
 import Conserto1 from '../../assets/conserto1.svg';
 import Conserto2 from '../../assets/conserto2.svg';
+
+import Electricity from '../../assets/icons/electricity.svg';
+import Cleaning from '../../assets/icons/cleaning.svg';
+import Leaking from '../../assets/icons/leaking.svg';
+
+import Service from './components/Service';
+
 
 
 export default function LandingPage() {
@@ -52,6 +58,15 @@ export default function LandingPage() {
             <img src={Conserto1} alt="técnico consertando máquina" />
             <img src={Conserto2} alt="técnico consertando máquina" />
           </span>
+        </div>
+
+        <div>
+          <h1>Serviços</h1>
+          <p>Especializado em concertos de máquina, seja de vazamento, fiação ou qualquer problema, sou o técnico que irá resolver seu problema!</p>
+          <Service imgService={Electricity} nameService="problemas elétricos" />
+          <Service imgService={Leaking} nameService="vazamento" />
+          <Service imgService={Cleaning} nameService="higienização" />
+
         </div>
       </main>
     </div>
