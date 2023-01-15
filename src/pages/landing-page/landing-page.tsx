@@ -5,6 +5,9 @@ import Services from '../../assets/icons/services.svg';
 import Clients from '../../assets/icons/clients.svg';
 import Attendance from '../../assets/icons/attendance.svg';
 
+import Conserto1 from '../../assets/conserto1.svg';
+import Conserto2 from '../../assets/conserto2.svg';
+
 
 export default function LandingPage() {
   return(
@@ -40,6 +43,15 @@ export default function LandingPage() {
               <p>50+ atendimentos</p>
             </span>
           </div>
+        </div>
+
+        <div>
+          <h1>Sobre nós</h1>
+          <p>Especializado em consertos, reformas, higienização, problemas eletrícos e eletrônicos, vazamentos e mal funcionamento de máquinas. Sou o técnico que irá resolver o problema do seu produto!</p>
+          <span>
+            <img src={Conserto1} alt="técnico consertando máquina" />
+            <img src={Conserto2} alt="técnico consertando máquina" />
+          </span>
         </div>
       </main>
     </div>
