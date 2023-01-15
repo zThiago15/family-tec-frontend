@@ -10,6 +10,8 @@ import Conserto2 from '../../assets/conserto2.svg';
 import Electricity from '../../assets/icons/electricity.svg';
 import Cleaning from '../../assets/icons/cleaning.svg';
 import Leaking from '../../assets/icons/leaking.svg';
+import Email from '../../assets/icons/email.svg';
+import Whatsapp from '../../assets/icons/whatsapp.svg';
 
 import Service from './components/Service';
 
@@ -69,6 +71,21 @@ export default function LandingPage() {
 
         </div>
       </main>
+      <footer>
+        <h1>Contato</h1>
+        <div>
+          <p><strong>Atendimento</strong>: seg à sex, das 9h as 18h</p>
+          <span>
+            <img src={Email} alt="email logo" />
+            E-mail: flavio.consertomaquinas@gmail.com
+          </span>
+          <span>
+            <img src={Whatsapp} alt="email logo" />
+            Whatsapp:  +55 (11) 99999-9999
+          </span>
+        </div>
+        <p>Entre em contato conosco, agenda uma visita técnica para resolver seu problema agora!</p>
+      </footer>
     </div>
   );
 }
