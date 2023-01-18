@@ -21,13 +21,11 @@ const screenWidth = window.screen.width;
 
 export default function LandingPage() {
 
-  // se a tela for cell, mostrar hamburger menu
-
   const screenWidth = window.screen.width;  
 
   return(
-    <div className="m-8">
-      <header className="flex justify-between">
+    <div>
+      <header className="flex justify-between m-8">
         <img src={Logo} alt="logo" className="w-[10em]" />
         <RxHamburgerMenu className="text-xl" />
         {/* <nav>
@@ -38,39 +36,39 @@ export default function LandingPage() {
         </nav> */}
       </header>
       <main>
-        <div>
+        <section>
           <img src={Technician} alt="técnico " />
-            <h1 className="text-primary-color font-bold text-2xl text-center">Conserto de máquinas lava e seca em um só lugar!</h1>
+            <h1 className="text-primary-color font-bold text-3xl text-center">Conserto de máquinas lava e seca em um só lugar!</h1>
             <div className="flex flex-col items-center content-evenly">
               <Status nameStatus="São Paulo, capital" imgStatus={Location} />
               <Status nameStatus="50+ clientes" imgStatus={Clients} />
               <Status nameStatus="10+ serviços" imgStatus={Services} />
               <Status nameStatus="50+ atendimentos" imgStatus={Attendance} />
             </div>
-          </div>
+          </section>
 
-        <div className="bg-background-color p-5 w-full">
-          <h1 className="text-xl text-primary-color font-bold text-center my-5">Sobre nós</h1>
-          <p className="text-primary-color">Especializado em consertos, reformas, higienização, problemas eletrícos e eletrônicos, vazamentos e mal funcionamento de máquinas. Sou o técnico que irá resolver o problema do seu produto!</p>
+        <section className="bg-background-color p-5 w-full">
+          <h1 className="text-3xl text-primary-color font-bold text-center my-5">Sobre nós</h1>
+          <p className="text-primary-color text-2xl">Especializado em consertos, reformas, higienização, problemas eletrícos e eletrônicos, vazamentos e mal funcionamento de máquinas. Sou o técnico que irá resolver o problema do seu produto!</p>
           <span>
             <img className="rounded-lg relative z-10 w-[80%] mt-5" src={Conserto1} alt="técnico consertando máquina" />
 
             <img className="rounded-lg relative z-20 w-[60%] left-20 bottom-10" src={Conserto2} alt="técnico consertando máquina" />
           </span>
-        </div>
+        </section>
 
-        <div>
-          <h1 className="font-bold text-center text-2xl text-primary-color">Serviços</h1>
-          <p className="text-[1.25em]">Especializado em consertos de máquina, realizo serviços de vazamento, fiação e higienização, sou o técnico que irá resolver seu problema!</p>
+        <section className="m-8">
+          <h1 className="font-bold text-center text-3xl text-primary-color mb-5">Serviços</h1>
+          <p className="text-2xl">Especializado em consertos de máquina, realizo serviços de vazamento, fiação e higienização, sou o técnico que irá resolver seu problema!</p>
           <span className="flex flex-col items-center">
             <Service imgService={Electricity} nameService="Fiação" />
             <Service imgService={Leaking} nameService="Vazamento" />
             <Service imgService={Cleaning} nameService="Higienização" />
           </span>
 
-        </div>
+        </section>
       </main>
-      <footer>
+      <footer className="bg-background-color ">
         <h1>Contato</h1>
         <div>
           <p><strong>Atendimento</strong>: seg à sex, das 9h as 18h</p>
