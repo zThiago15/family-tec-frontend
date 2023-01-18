@@ -20,8 +20,13 @@ import Status from './components/Status';
 const screenWidth = window.screen.width;
 
 export default function LandingPage() {
+
+  // se a tela for cell, mostrar hamburger menu
+
+  const screenWidth = window.screen.width;  
+
   return(
-    <div className="m-5">
+    <div className="m-8">
       <header className="flex justify-between">
         <img src={Logo} alt="logo" className="w-[10em]" />
         <RxHamburgerMenu className="text-xl" />
@@ -36,17 +41,15 @@ export default function LandingPage() {
         <div>
           <img src={Technician} alt="técnico " />
             <h1 className="text-primary-color font-bold text-2xl text-center">Conserto de máquinas lava e seca em um só lugar!</h1>
-            <div className="flex">
+            <div className="flex flex-col items-center content-evenly">
               <Status nameStatus="São Paulo, capital" imgStatus={Location} />
               <Status nameStatus="50+ clientes" imgStatus={Clients} />
-            </div>
-            <div className="flex">
               <Status nameStatus="10+ serviços" imgStatus={Services} />
               <Status nameStatus="50+ atendimentos" imgStatus={Attendance} />
             </div>
           </div>
 
-        <div className="bg-background-color p-5">
+        <div className="bg-background-color p-5 w-full">
           <h1 className="text-xl text-primary-color font-bold text-center my-5">Sobre nós</h1>
           <p className="text-primary-color">Especializado em consertos, reformas, higienização, problemas eletrícos e eletrônicos, vazamentos e mal funcionamento de máquinas. Sou o técnico que irá resolver o problema do seu produto!</p>
           <span>
@@ -57,11 +60,13 @@ export default function LandingPage() {
         </div>
 
         <div>
-          <h1>Serviços</h1>
-          <p>Especializado em concertos de máquina, seja de vazamento, fiação ou qualquer problema, sou o técnico que irá resolver seu problema!</p>
-          <Service imgService={Electricity} nameService="problemas elétricos" />
-          <Service imgService={Leaking} nameService="vazamento" />
-          <Service imgService={Cleaning} nameService="higienização" />
+          <h1 className="font-bold text-center text-2xl text-primary-color">Serviços</h1>
+          <p className="text-[1.25em]">Especializado em consertos de máquina, realizo serviços de vazamento, fiação e higienização, sou o técnico que irá resolver seu problema!</p>
+          <span className="flex flex-col items-center">
+            <Service imgService={Electricity} nameService="Fiação" />
+            <Service imgService={Leaking} nameService="Vazamento" />
+            <Service imgService={Cleaning} nameService="Higienização" />
+          </span>
 
         </div>
       </main>

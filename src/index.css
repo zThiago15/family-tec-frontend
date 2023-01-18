@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* reset CSS */
 * {
   margin: 0;
   padding: 0;
