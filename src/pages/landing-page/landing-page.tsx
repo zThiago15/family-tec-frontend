@@ -66,23 +66,30 @@ export default function LandingPage() {
       </main>
       <footer className="mt-10">
         <div id="contact" className="bg-background-color">
-          <h1 className="text-3xl text-primary-color text-center">Contato</h1>
+          <h1 className="font-bold text-3xl text-primary-color text-center">Contato</h1>
           <p className="text-primary-color text-2xl text-center p-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
-          <div className="m-3">
-            <p className="mb-3"><strong>Atendimento</strong>: seg à sex, das 9h as 18h</p>
-            <span className="flex pb-3">
+
+          <div className="m-3 flex flex-col items-center">
+            <p className="mb-3"><strong>Atendimento</strong>: seg à sex, das 9h às 18h</p>
+            <a 
+              href="https://api.whatsapp.com/send?phone=977116359"
+              className="flex justify-evenly items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 relative hover:bg-green-600">
               <img src={Whatsapp} alt="email logo" className="mr-2 w-8" />
-              <p> (11) 99999-9999 - Flávio(técnico)</p>
-            </span>
-            <span className="flex pb-3">
+              <p className="font-semibold">Flávio(técnico)</p>
+            </a> 
+            <a
+              href="https://api.whatsapp.com/send?phone=986198559" 
+              className="flex justify-evenly items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 hover:bg-green-600"
+            >
               <img src={Whatsapp} alt="email logo" className="mr-2 w-8" />
-              <p> (11) 99999-9999 - Nilde(atendimento)</p>
-            </span>
+              <p className="font-semibold">Nilde(atendimento)</p>
+            </a>
+
           </div>
         </div>
 
         <div>
-          <h1 className="text-center text-2xl my-3">Privacidade e termos de serviços</h1>
+          <h1 className="text-center text-2xl my-3">Privacidade e termos de uso</h1>
           <span className="flex flex-col items-center mt-10">
             <img src={Logo} alt="logo" className="w-[10em] mb-3" />
             <p className="flex items-center justify-center">2023 <AiOutlineCopyright className="mx-1" /> Todos os direitos reservados</p>
