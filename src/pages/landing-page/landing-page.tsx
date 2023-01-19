@@ -10,7 +10,7 @@ import Conserto2 from '../../assets/conserto2.svg';
 import Electricity from '../../assets/icons/electricity.svg';
 import Cleaning from '../../assets/icons/cleaning.svg';
 import Leaking from '../../assets/icons/leaking.svg';
-import Whatsapp from '../../assets/icons/whatsapp.svg';
+import { BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineCopyright } from 'react-icons/ai';
 
 import Service from './components/Service';
@@ -70,18 +70,19 @@ export default function LandingPage() {
           <p className="text-primary-color text-2xl text-center p-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
 
           <div className="m-3 flex flex-col items-center">
-            <p className="mb-3"><strong>Atendimento</strong>: seg à sex, das 9h às 18h</p>
+            <p className="mb-3 text-primary-color"><strong>Atendimento</strong>: seg à sex, das 9h às 18h</p>
             <a 
-              href="https://api.whatsapp.com/send?phone=977116359"
-              className="flex justify-evenly items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 relative hover:bg-green-600">
-              <img src={Whatsapp} alt="email logo" className="mr-2 w-8" />
+              href="https://api.whatsapp.com/send?phone=11977116359"
+              className="flex justify-between items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 relative hover:bg-green-600 px-5"
+            >
+              <BsWhatsapp className="text-3xl" />
               <p className="font-semibold">Flávio(técnico)</p>
             </a> 
             <a
-              href="https://api.whatsapp.com/send?phone=986198559" 
-              className="flex justify-evenly items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 hover:bg-green-600"
+              href="https://api.whatsapp.com/send?phone=11986198559" 
+              className="flex justify-between items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 hover:bg-green-600 px-5"
             >
-              <img src={Whatsapp} alt="email logo" className="mr-2 w-8" />
+              <BsWhatsapp className="text-3xl" />
               <p className="font-semibold">Nilde(atendimento)</p>
             </a>
 
@@ -89,7 +90,7 @@ export default function LandingPage() {
         </div>
 
         <div>
-          <h1 className="text-center text-2xl my-3">Privacidade e termos de uso</h1>
+          <h1 className="text-center text-2xl mb-20">Privacidade e termos de uso</h1>
           <span className="flex flex-col items-center mt-10">
             <img src={Logo} alt="logo" className="w-[10em] mb-3" />
             <p className="flex items-center justify-center">2023 <AiOutlineCopyright className="mx-1" /> Todos os direitos reservados</p>
