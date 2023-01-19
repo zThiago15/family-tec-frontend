@@ -16,6 +16,7 @@ import { AiOutlineCopyright } from 'react-icons/ai';
 import Service from './components/Service';
 import Status from './components/Status';
 import Header from './components/Header';
+import FAQs from './components/FAQs';
 
 export default function LandingPage() {
 
@@ -56,8 +57,14 @@ export default function LandingPage() {
           </span>
 
         </section>
+        <section>
+          <h1 className="text-3xl text-primary-color text-center font-bold mb-5">Dúvidas frequentes</h1>
+          <FAQs question="Onde você realiza atendimento?" answer="Realizo atendimento na região metropolitana da capital de São Paulo." />
+          <FAQs question="Qual o preço da visita técnica?" answer="O orçamento da visita varia entre R$45 e R$70." />
+        </section>
+        
       </main>
-      <footer>
+      <footer className="mt-10">
         <div id="contact" className="bg-background-color">
           <h1 className="text-3xl text-primary-color text-center">Contato</h1>
           <p className="text-primary-color text-lg text-center px-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
