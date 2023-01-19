@@ -21,7 +21,7 @@ export default function Header() {
 
         lg:block
         `}>
-        <nav className="text-lg flex flex-col justify-evenly pt-2 w-full">
+        <nav className="text-lg flex flex-col justify-evenly pt-2 w-full"  onClick={() => setShowNavBar(!showNavBar)}>
           <a href="#home" className="px-3 bg-slate-300 active:bg-slate-400">Home</a>
           <a href="#about-us" className="px-3 bg-slate-300 active:bg-slate-400">Sobre nós</a>
           <a href="#services" className="px-3 bg-slate-300 active:bg-slate-400">Serviços</a>

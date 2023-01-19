@@ -67,7 +67,7 @@ export default function LandingPage() {
       <footer className="mt-10">
         <div id="contact" className="bg-background-color">
           <h1 className="text-3xl text-primary-color text-center">Contato</h1>
-          <p className="text-primary-color text-lg text-center px-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
+          <p className="text-primary-color text-2xl text-center p-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
           <div className="m-3">
             <p className="mb-3"><strong>Atendimento</strong>: seg à sex, das 9h as 18h</p>
             <span className="flex pb-3">
@@ -80,6 +80,7 @@ export default function LandingPage() {
             </span>
           </div>
         </div>
+
         <div>
           <h1 className="text-center text-2xl my-3">Privacidade e termos de serviços</h1>
           <span className="flex flex-col items-center mt-10">
