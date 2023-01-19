@@ -22,10 +22,10 @@ export default function Header() {
         lg:block
         `}>
         <nav className="text-lg flex flex-col justify-evenly pt-2 w-full"  onClick={() => setShowNavBar(!showNavBar)}>
-          <a href="#home" className="px-3 bg-slate-300 active:bg-slate-400">Home</a>
-          <a href="#about-us" className="px-3 bg-slate-300 active:bg-slate-400">Sobre nós</a>
-          <a href="#services" className="px-3 bg-slate-300 active:bg-slate-400">Serviços</a>
-          <a href="#contact" className="px-3 bg-slate-300 active:bg-slate-400">Contato</a>
+          <a href="#home" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Home</a>
+          <a href="#about-us" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Sobre nós</a>
+          <a href="#services" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Serviços</a>
+          <a href="#contact" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Contato</a>
         </nav>
 
       </div>
