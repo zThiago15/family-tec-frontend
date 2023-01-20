@@ -60,7 +60,7 @@ export default function LandingPage() {
         <section>
           <h1 className="text-3xl text-primary-color text-center font-bold mb-5">Dúvidas frequentes</h1>
           <FAQs question="Onde você realiza atendimento?" answer="Realizo atendimento na região metropolitana da capital de São Paulo." />
-          <FAQs question="Qual o preço da visita técnica?" answer="O orçamento da visita varia entre R$45 e R$70." />
+          <FAQs question="Qual o preço da visita técnica?" answer="O orçamento da visita técnica varia de R$30 à R$50 dependendo da região." />
         </section>
         
       </main>
