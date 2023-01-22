@@ -60,8 +60,8 @@ export default function LandingPage() {
           </span>
 
         </section>
-        <section>
-          <h1 className="text-3xl text-primary-color text-center font-bold mb-5">Dúvidas frequentes</h1>
+        <section className="flex flex-col items-center">
+          <h1 className="text-3xl text-primary-color text-center font-bold mb-5 lg:text-5xl">Dúvidas frequentes</h1>
           <FAQs question="Onde você realiza atendimento?" answer="Realizo atendimento na região metropolitana da capital de São Paulo." />
           <FAQs question="Qual o preço da visita técnica?" answer="O orçamento da visita técnica varia de R$30 à R$50 dependendo da região." />
         </section>
@@ -69,21 +69,22 @@ export default function LandingPage() {
       </main>
       <footer className="mt-10">
         <div id="contact" className="bg-background-color">
-          <h1 className="font-bold text-3xl text-primary-color text-center">Contato</h1>
+          <h1 className="font-bold text-3xl text-primary-color text-center lg:text-5xl">Contato</h1>
           <p className="text-primary-color text-2xl text-center p-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
 
           <div className="m-3 flex flex-col items-center">
             <p className="mb-3 text-primary-color"><strong>Atendimento</strong>: seg à sex, das 9h às 18h</p>
             <a 
               href="https://api.whatsapp.com/send?phone=11977116359"
-              className="flex justify-between items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 relative hover:bg-green-600 px-5"
+              className="flex justify-between items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 relative transition-all hover:bg-green-600 px-5 
+              lg:w-[30%]"
             >
               <BsWhatsapp className="text-3xl" />
               <p className="font-semibold">Flávio(técnico)</p>
             </a> 
             <a
               href="https://api.whatsapp.com/send?phone=11986198559" 
-              className="flex justify-between items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 hover:bg-green-600 px-5"
+              className="flex justify-between items-center p-3 bg-green-500 text-white w-[80%] rounded-full mb-5 hover:bg-green-600 px-5 lg:w-[30%]"
             >
               <BsWhatsapp className="text-3xl" />
               <p className="font-semibold">Nilde(atendimento)</p>
@@ -93,7 +94,7 @@ export default function LandingPage() {
         </div>
 
         <div>
-          <h1 className="text-center text-2xl mb-20">Privacidade e termos de uso</h1>
+          <h1 className="text-center text-2xl mb-20 lg:text-5xl">Privacidade e termos de uso</h1>
           <span className="flex flex-col items-center mt-10">
             <img src={Logo} alt="logo" className="w-[10em] mb-3" />
             <p className="flex items-center justify-center">2023 <AiOutlineCopyright className="mx-1" /> Todos os direitos reservados</p>

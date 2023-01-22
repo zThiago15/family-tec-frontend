@@ -13,7 +13,8 @@ export default function FAQs(props: FAQsProps) {
   const [showAnswer, setShowAnswer] = useState(false);
 
   return (
-    <section className={` m-5 border-solid border-gray-300 border-2 ${showAnswer && 'border-l-4 border-l-primary-color'}`}>
+    <section className={` m-5 border-solid border-gray-300 border-2 ${showAnswer && 'border-l-4 border-l-primary-color'}
+    lg:w-[60%] m-auto mb-5 p-4`}>
         <button 
           className="cursor-pointer w-full px-4 flex justify-between items-center" 
           onClick={ () => setShowAnswer(!showAnswer)}
