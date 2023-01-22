@@ -7,7 +7,7 @@ export default function Header() {
   const [showNavBar, setShowNavBar] = useState(false);
 
   return (
-    <header className="fixed z-30 w-full bg-white">
+    <header className="fixed z-30 w-full bg-white lg:flex justify-between">
 
       <span className="flex justify-between items-center lg p-2">
         <img src={Logo} alt="logo" className="w-[10em]" />
@@ -18,14 +18,19 @@ export default function Header() {
 
       <div className={`
         ${showNavBar ? 'block' : 'hidden'}
-
-        lg:block
+        lg:inline-block w-[50%]
         `}>
-        <nav className="text-lg flex flex-col justify-evenly pt-2 w-full"  onClick={() => setShowNavBar(!showNavBar)}>
-          <a href="#home" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Home</a>
-          <a href="#about-us" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Sobre nós</a>
-          <a href="#services" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Serviços</a>
-          <a href="#contact" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300">Contato</a>
+        <nav 
+          className="
+            text-2xl flex flex-col justify-evenly pt-2 w-full
+            lg:flex-row text-terciary-color border-solid border-2 rounded-bl-full shadow-md p-10
+          "  
+          onClick={() => setShowNavBar(!showNavBar)}
+        >
+          <a href="#home" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300 lg:bg-white hover:bg-slate-100">Home</a>
+          <a href="#about-us" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300 lg:bg-white hover:bg-slate-100">Sobre nós</a>
+          <a href="#services" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300 lg:bg-white hover:bg-slate-100">Serviços</a>
+          <a href="#contact" className="px-3 bg-slate-200 transition-colors hover:bg-slate-300 lg:bg-white hover:bg-slate-100">Contato</a>
         </nav>
 
       </div>

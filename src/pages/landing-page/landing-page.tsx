@@ -24,33 +24,36 @@ export default function LandingPage() {
     <div>
       <Header />
       <main>
-        <section id="home" className="pt-8">
-          <img src={Technician} alt="técnico " />
+        <section id="home" className="pt-8 lg:flex items-center">
+          <img src={Technician} alt="técnico" />
+          <div>
             <h1 className="text-primary-color font-bold text-3xl text-center">Conserto de máquinas lava e seca em um só lugar!</h1>
-            <div className="flex flex-col items-center content-evenly">
+            <span className="lg:grid grid-cols-2 gap-1 ml-10 mt-10">
               <Status nameStatus="São Paulo, capital" imgStatus={Location} />
               <Status nameStatus="50+ clientes" imgStatus={Clients} />
               <Status nameStatus="10+ serviços" imgStatus={Services} />
               <Status nameStatus="50+ atendimentos" imgStatus={Attendance} />
+            </span>
             </div>
           </section>
 
-        <section id="about-us" className="bg-background-color p-5 w-full">
+        <section id="about-us" className="bg-background-color p-5 w-full lg:flex justify-evenly items-center">
+          <span className="lg: w-[40%]">
+            <h1 className="text-3xl text-primary-color font-bold text-center my-5 lg:text-5xl">Sobre nós</h1>
+            <p className="text-primary-color text-2xl lg:text-4xl">Especializado em consertos, reformas, higienização, problemas eletrícos e eletrônicos, vazamentos e mal funcionamento de máquinas. Sou o técnico que irá resolver o problema do seu produto!</p>
+          </span>
 
-          <h1 className="text-3xl text-primary-color font-bold text-center my-5">Sobre nós</h1>
-          <p className="text-primary-color text-2xl">Especializado em consertos, reformas, higienização, problemas eletrícos e eletrônicos, vazamentos e mal funcionamento de máquinas. Sou o técnico que irá resolver o problema do seu produto!</p>
-
-          <span>
+          <span className="lg: w-[40%]">
             <img className="rounded-lg relative z-10 w-[80%] mt-5" src={Conserto1} alt="técnico consertando máquina" />
 
-            <img className="rounded-lg relative z-20 w-[60%] left-20 bottom-10" src={Conserto2} alt="técnico consertando máquina" />
+            <img className="rounded-lg relative z-20 w-[60%] left-20 bottom-10 lg:left-48 bottom-20" src={Conserto2} alt="técnico consertando máquina" />
           </span>
         </section>
 
         <section id="services" className="m-8">
-          <h1 className="font-bold text-center text-3xl text-primary-color mb-5">Serviços</h1>
-          <p className="text-2xl text-center">Especializado em consertos de máquina, realizo serviços de vazamento, fiação e higienização, sou o técnico que irá resolver seu problema!</p>
-          <span className="flex flex-col items-center">
+          <h1 className="font-bold text-center text-3xl text-primary-color mb-5 lg:lg:text-5xl">Serviços</h1>
+          <p className="text-2xl text-center lg:text-4xl">Especializado em consertos de máquina, realizo serviços de vazamento, fiação e higienização, sou o técnico que irá resolver seu problema!</p>
+          <span className="flex flex-col items-center lg:flex-row justify-between items-baseline w-[50%] m-auto">
             <Service imgService={Electricity} nameService="Fiação" />
             <Service imgService={Leaking} nameService="Vazamento" />
             <Service imgService={Cleaning} nameService="Higienização" />
