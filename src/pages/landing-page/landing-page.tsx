@@ -82,14 +82,14 @@ export default function LandingPage() {
               className="flex justify-evenly items-center p-3 bg-green-500 text-white rounded-full mb-5 transition-all hover:bg-green-600 px-5 
               lg:w-[30%]"
             >
-              <BsWhatsapp className="text-3xl" />
+              <BsWhatsapp className="text-3xl mr-5" />
               <p className="font-semibold">Flávio(técnico)</p>
             </a> 
             <a
               href="https://api.whatsapp.com/send?phone=11986198559" 
               className="flex justify-evenly items-center p-3 bg-green-500 text-white rounded-full mb-5 hover:bg-green-600 px-5 lg:w-[30%]"
             >
-              <BsWhatsapp className="text-3xl" />
+              <BsWhatsapp className="text-3xl mr-5" />
               <p className="font-semibold">Nilde(atendimento)</p>
             </a>
 
