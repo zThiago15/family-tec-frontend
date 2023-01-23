@@ -28,7 +28,10 @@ export default function LandingPage() {
           <img src={Technician} alt="técnico" />
           <div>
             <h1 className="text-primary-color font-bold text-3xl text-center">Conserto de máquinas lava e seca em um só lugar!</h1>
-            <span className="lg:grid grid-cols-2 gap-1 ml-10 mt-10">
+            <span className="
+              flex flex-col items-center
+              lg:grid grid-cols-2 gap-1 ml-15 mt-10"
+            >
               <Status nameStatus="São Paulo, capital" imgStatus={Location} />
               <Status nameStatus="50+ clientes" imgStatus={Clients} />
               <Status nameStatus="10+ serviços" imgStatus={Services} />
@@ -51,16 +54,16 @@ export default function LandingPage() {
         </section>
 
         <section id="services" className="m-8">
-          <h1 className="font-bold text-center text-3xl text-primary-color mb-5 lg:lg:text-5xl">Serviços</h1>
+          <h1 className="font-bold text-center text-3xl text-primary-color mb-5 lg:text-5xl">Serviços</h1>
           <p className="text-2xl text-center lg:text-4xl">Especializado em consertos de máquina, realizo serviços de vazamento, fiação e higienização, sou o técnico que irá resolver seu problema!</p>
-          <span className="flex flex-col items-center lg:flex-row justify-between items-baseline w-[50%] m-auto">
+          <span className="flex flex-col items-center lg:flex-row justify-between lg:items-baseline w-[50%] m-auto">
             <Service imgService={Electricity} nameService="Fiação" />
             <Service imgService={Leaking} nameService="Vazamento" />
             <Service imgService={Cleaning} nameService="Higienização" />
           </span>
 
         </section>
-        <section className="flex flex-col items-center my-28">
+        <section className="flex flex-col items-center my-16">
           <h1 className="text-3xl text-primary-color text-center font-bold mb-5 lg:text-5xl">Dúvidas frequentes</h1>
           <FAQs question="Onde você realiza atendimento?" answer="Realizo atendimento na região metropolitana da capital de São Paulo." />
           <FAQs question="Qual o preço da visita técnica?" answer="O orçamento da visita técnica varia de R$30 à R$50 dependendo da região." />
