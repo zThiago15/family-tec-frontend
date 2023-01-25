@@ -78,7 +78,7 @@ export default function LandingPage() {
           <div className="m-3 flex flex-col items-center">
             <p className="mb-3 text-primary-color"><strong>Atendimento</strong>: seg à sex, das 9h às 18h</p>
             <a 
-              href="https://api.whatsapp.com/send?phone=+5511977116359"
+              href="https://wa.me/5511977116359"
               className="flex justify-evenly items-center p-3 bg-green-500 text-white rounded-full mb-5 transition-all hover:bg-green-600 px-5 
               lg:w-[30%]"
             >
@@ -86,7 +86,7 @@ export default function LandingPage() {
               <p className="font-semibold">Flávio(técnico)</p>
             </a> 
             <a
-              href="https://api.whatsapp.com/send?phone=+5511986198559" 
+              href="https://wa.me/5511986198559" 
               className="flex justify-evenly items-center p-3 bg-green-500 text-white rounded-full mb-5 hover:bg-green-600 px-5 lg:w-[30%]"
             >
               <BsWhatsapp className="text-3xl mr-5" />
