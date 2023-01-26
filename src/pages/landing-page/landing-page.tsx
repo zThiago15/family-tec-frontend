@@ -17,8 +17,11 @@ import Service from './components/Service';
 import Status from './components/Status';
 import Header from './components/Header';
 import FAQs from './components/FAQs';
+import { useState } from 'react';
+import Feedback from './components/Feedback';
 
 export default function LandingPage() {
+  const [showForm, setShowForm] = useState(false);
 
   return(
     <div>
@@ -68,7 +71,9 @@ export default function LandingPage() {
           <FAQs question="Onde você realiza atendimento?" answer="Realizo atendimento na região metropolitana da capital de São Paulo." />
           <FAQs question="Qual o preço da visita técnica?" answer="O orçamento da visita técnica varia de R$30 à R$50 dependendo da região." />
         </section>
-        
+
+        <Feedback />
+
       </main>
       <footer className="mt-10 bg-background-color">
         <div id="contact">
