@@ -88,14 +88,14 @@ export default function LandingPage() {
               lg:w-[30%]"
             >
               <BsWhatsapp className="text-3xl mr-5" />
-              <p className="font-semibold">Flávio(técnico)</p>
+              <p className="font-semibold">Flávio(técnico) - (11) 97711-6359</p>
             </a> 
             <a
               href="https://wa.me/5511986198559" 
               className="flex justify-evenly items-center p-3 bg-green-500 text-white rounded-full mb-5 hover:bg-green-600 px-5 lg:w-[30%]"
             >
               <BsWhatsapp className="text-3xl mr-5" />
-              <p className="font-semibold">Nilde(atendimento)</p>
+              <p className="font-semibold">Nilde(atendimento) - (11) 98619-8559</p>
             </a>
 
           </div>
