@@ -13,12 +13,12 @@ import Leaking from '../../assets/icons/leaking.svg';
 import { BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineCopyright } from 'react-icons/ai';
 
-import Service from './components/Service';
-import Status from './components/Status';
-import Header from './components/Header';
-import FAQs from './components/FAQs';
+import Service from '../../components/Service';
+import Status from '../../components/Status';
+import Header from '../../components/Header';
+import FAQs from '../../components/FAQs';
 import { useState } from 'react';
-import Feedback from './components/Feedback';
+import Feedback from '../../components/Feedback';
 
 export default function LandingPage() {
   const [showForm, setShowForm] = useState(false);

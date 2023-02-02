@@ -6,7 +6,7 @@ export default function Feedback() {
     const [showForm, setShowForm] = useState(false);
     const [name, setName] = useState('');
     const [textFeedback, setTextFeedback] = useState('');
-    const [rating, setRating] = useState(0);
+    const [rating, setRating] = useState(1);
 
     const saveFeedback = (e: FormEvent) => {
         e.preventDefault();

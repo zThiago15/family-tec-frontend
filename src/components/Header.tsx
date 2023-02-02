@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Logo from '../../../assets/logo.svg'
+import Logo from '../assets/logo.svg'
 
 export default function Header() {
 
