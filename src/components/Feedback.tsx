@@ -38,24 +38,25 @@ export default function Feedback() {
           {
             savedFeedbacks.map(({ id, feedback, name, starRating }) => (
               <div key={id} className="bg-white rounded-3xl w-[80%] m-auto my-5 p-5">
-                <h2 className="text-2xl italic">{name}</h2>
-                <span className="py-5">
-
-                  <StarRatings rating={starRating} starRatedColor="yellow" starDimension="30px" />
-                </span>
+                <h2 className="text-2xl italic mb">{name}</h2>
+                <StarRatings rating={starRating} starRatedColor="yellow" starDimension="30px" />
                 <p>{feedback}</p>
               </div>
             ))
           }
 
-          <button className="w-4/5 m-8 text-lg p-3 rounded-3xl bg-primary-color text-white" onClick={() => setShowForm(!showForm)}>Já é nosso cliente? Faça uma avaliação</button>
+          <button className="w-[60%] mx-[20%] my-8 text-lg p-3 rounded-3xl bg-primary-color text-white" onClick={() => setShowForm(!showForm)}>Já é nosso cliente? Faça uma avaliação</button>
           {
             showForm && (
               <form onSubmit={(e) => saveFeedback(e)} className="flex flex-col justify-center items-center">
-                <input className="border-2 border-solid border-lightgray p-2 w-3/4 my-5" placeholder="Nome completo*" onChange={(e) => setName(e.target.value)} required />
-                <textarea className="border-2 border-solid border-lightgray p-2 w-3/4" placeholder="Feedback*" onChange={(e) => setFeedback(e.target.value)} minLength={10} required></textarea>
+                <input className="border-2 border-solid border-lightgray p-2 w-3/4 my-5 outline-none rounded-xl" placeholder="Nome completo*" onChange={(e) => setName(e.target.value)} required />
+
+                <textarea className="border-2 border-solid border-lightgray p-2 w-3/4 outline-none rounded-xl" placeholder="Feedback*" onChange={(e) => setFeedback(e.target.value)} minLength={10} required></textarea>
                 
-                <StarRatings starDimension="30px" rating={starRating} changeRating={(newRating) => setStarRating(newRating)} starRatedColor="yellow" starHoverColor="yellow"  />
+                <span className="my-5">
+                  
+                  <StarRatings starDimension="35px" rating={starRating} changeRating={(newRating) => setStarRating(newRating)} starRatedColor="yellow" starHoverColor="yellow"  />
+                </span>
 
                 <button className="bg-primary-color text-white text-2xl p-5 my-5 rounded-3xl w-4/5" type="submit">Enviar</button>
               </form>
