@@ -1,15 +1,18 @@
 import { FormEvent, useState } from "react";
 import StarRatings from 'react-star-ratings';
+import { createFeedback } from "../services/feedback";
 
 export default function Feedback() {
 
     const [showForm, setShowForm] = useState(false);
     const [name, setName] = useState('');
-    const [textFeedback, setTextFeedback] = useState('');
-    const [rating, setRating] = useState(1);
+    const [feedback, setTextFeedback] = useState('');
+    const [starRating, setStarRating] = useState(1);
 
-    const saveFeedback = (e: FormEvent) => {
+    const saveFeedback = async (e: FormEvent) => {
         e.preventDefault();
+        await createFeedback({ name, feedback, starRating })
+        alert('Feedback enviado')
     }
     
     return (
@@ -24,7 +27,7 @@ export default function Feedback() {
               <form onSubmit={(e) => saveFeedback(e)} className="flex flex-col justify-center items-center">
                 <input className="border-2 border-solid border-lightgray p-2 w-3/4 my-5" placeholder="Nome completo*" onChange={(e) => setName(e.target.value)} required />
                 <textarea className="border-2 border-solid border-lightgray p-2 w-3/4" placeholder="Feedback*" onChange={(e) => setTextFeedback(e.target.value)} minLength={10} required></textarea>
-                <StarRatings starDimension="30px" rating={rating} changeRating={(newRating) => setRating(newRating)} starRatedColor="darkyellow" starHoverColor="yellow"  />
+                <StarRatings starDimension="30px" rating={starRating} changeRating={(newRating) => setStarRating(newRating)} starRatedColor="darkyellow" starHoverColor="yellow"  />
                 <button className="bg-primary-color text-white text-2xl p-5 my-5 rounded-3xl w-4/5" type="submit">Enviar</button>
               </form>
             )
