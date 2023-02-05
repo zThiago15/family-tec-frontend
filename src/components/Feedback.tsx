@@ -13,6 +13,8 @@ export default function Feedback() {
         e.preventDefault();
         await createFeedback({ name, feedback, starRating })
         alert('Feedback enviado')
+
+        location.reload()
     }
     
     return (
