@@ -75,7 +75,7 @@ export default function LandingPage() {
         <Feedback />
 
       </main>
-      <footer className="mt-10 bg-background-color">
+      <footer className=" bg-white">
         <div id="contact">
           <h1 className="font-bold text-3xl text-primary-color text-center py-10 lg:text-5xl">Contato</h1>
           <p className="text-primary-color text-2xl text-center p-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
