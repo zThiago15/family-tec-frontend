@@ -13,12 +13,15 @@ import Leaking from '../../assets/icons/leaking.svg';
 import { BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineCopyright } from 'react-icons/ai';
 
-import Service from './components/Service';
-import Status from './components/Status';
-import Header from './components/Header';
-import FAQs from './components/FAQs';
+import Service from '../../components/Service';
+import Status from '../../components/Status';
+import Header from '../../components/Header';
+import FAQs from '../../components/FAQs';
+import { useState } from 'react';
+import Feedback from '../../components/Feedback';
 
 export default function LandingPage() {
+  const [showForm, setShowForm] = useState(false);
 
   return(
     <div>
@@ -68,9 +71,11 @@ export default function LandingPage() {
           <FAQs question="Onde você realiza atendimento?" answer="Realizo atendimento na região metropolitana da capital de São Paulo." />
           <FAQs question="Qual o preço da visita técnica?" answer="O orçamento da visita técnica varia de R$30 à R$50 dependendo da região." />
         </section>
-        
+
+        <Feedback />
+
       </main>
-      <footer className="mt-10 bg-background-color">
+      <footer className=" bg-white">
         <div id="contact">
           <h1 className="font-bold text-3xl text-primary-color text-center py-10 lg:text-5xl">Contato</h1>
           <p className="text-primary-color text-2xl text-center p-3">Nos contate para fazer um agendamento de visita técnica para resolver seu problema!</p>
@@ -83,14 +88,14 @@ export default function LandingPage() {
               lg:w-[30%]"
             >
               <BsWhatsapp className="text-3xl mr-5" />
-              <p className="font-semibold">Flávio(técnico)</p>
+              <p className="font-semibold">Flávio(técnico) - (11) 97711-6359</p>
             </a> 
             <a
               href="https://wa.me/5511986198559" 
               className="flex justify-evenly items-center p-3 bg-green-500 text-white rounded-full mb-5 hover:bg-green-600 px-5 lg:w-[30%]"
             >
               <BsWhatsapp className="text-3xl mr-5" />
-              <p className="font-semibold">Nilde(atendimento)</p>
+              <p className="font-semibold">Nilde(atendimento) - (11) 98619-8559</p>
             </a>
 
           </div>
