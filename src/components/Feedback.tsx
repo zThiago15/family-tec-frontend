@@ -10,9 +10,7 @@ export default function Feedback() {
     const [feedback, setFeedback] = useState('');
     const [starRating, setStarRating] = useState(1);
 
-  const [savedFeedbacks, setSavedFeedbacks] = useState<IFeedback[] | []>([
-    { name: 'Frankiln Wainster smith', feedback: 'teste', 'starRating': 4 }
-  ]);
+  const [savedFeedbacks, setSavedFeedbacks] = useState<IFeedback[] | []>([]);
 
     const saveFeedback = async (e: FormEvent) => {
         e.preventDefault();
