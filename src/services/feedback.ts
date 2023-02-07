@@ -6,7 +6,7 @@ export const createFeedback = async (data: IFeedback) => {
     return true;
 }
 
-export const getTopFiveFeedbacks = async () => { 
+export const getTopFiveFeedbacks = async (): Promise<IFeedback[]> => { 
     const response = await api.get('/feedbacktopfive')
     return response.data;
 }

@@ -23,8 +23,8 @@ export default function Feedback() {
     useEffect( () => {
       const getFeedbacks = async () => {
         const response = await getTopFiveFeedbacks();
-        console.log(response);
-        // setSavedFeedbacks(response)
+        // console.log(response);
+        setSavedFeedbacks(response)
       };
       getFeedbacks();
     }, [])
