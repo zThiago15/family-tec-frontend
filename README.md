@@ -2,12 +2,17 @@
 
 Trabalho freelance de uma landing page divulgando serviço de técnico de máquinas de lava e seca com especialização em reparos e manutenções de diversas marcas e modelos. 🚀
 
+
+---
+
 ## Tecnologias Utilizadas 💻
 - React.js
 - Tailwind.css
 - Axios(Conexão com API)
 - Vitest(testes unitários)
 - Vercel(Deploy)
+
+---
 
 ## Páginas 📜
 
@@ -21,9 +26,17 @@ Trabalho freelance de uma landing page divulgando serviço de técnico de máqui
 
 5. Contato: Informações de contato para agendar uma visita técnica.
 
+<img src="public/images/home.png" alt="home"> <br />
+<img src="public/images/services.png" alt="services"> <br />
+<img src="public/images/contact.png" alt="contact">
+
+---
+
 ## Deploy 🚀
 A landing page foi hospedade no Vercel e possui um domnínio personalizado. 
 Link do site: __https://assistenciatecnicafamilytec.com/__
+
+---
 
 ## Licença
 Licenciado por MIT ©️
