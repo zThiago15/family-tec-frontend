@@ -7,32 +7,38 @@ export default function Header() {
   const [showNavBar, setShowNavBar] = useState(false);
 
   return (
-    <header className="fixed z-30 w-full bg-white lg:flex justify-between">
+    <header className="fixed z-30 h-16 w-full lg:flex bg-white justify-between">
 
       <span className="flex justify-between items-center p-2">
         <img src={Logo} alt="logo" className="w-[10em]" />
-        <RxHamburgerMenu className="text-2xl lg:hidden" onClick={() => setShowNavBar(!showNavBar)} />
+        <RxHamburgerMenu className="text-2xl cursor-pointer lg:hidden" onClick={() => setShowNavBar(!showNavBar)} />
 
       </span>
 
-
       <div className={`
         ${showNavBar ? 'block ' : 'hidden'}
-        
         lg:inline-block
         `}>
         <nav 
           className="
-            text-2xl flex flex-col justify-evenly lg:w-full
+            text-2xl flex flex-col justify-evenly items-end
 
-            lg:flex-row lg:text-terciary-color lg:border-solid lg:border-2 lg:rounded-bl-full lg:shadow-md lg:p-10
+            lg:h-16  lg:flex-row lg:text-xs lg:underline lg:items-center lg:bg-none
           "  
           onClick={() => setShowNavBar(!showNavBar)}
         >
-          <a href="#home" className="px-3 max-sm:even:bg-slate-200 max-sm:odd:bg-slate-300 transition-colors lg:bg-white hover:bg-slate-100">Home</a>
-          <a href="#about-us" className="px-3 max-sm:even:bg-slate-200 max-sm:odd:bg-slate-300 transition-colors lg:bg-white hover:bg-slate-100">Sobre nós</a>
-          <a href="#services" className="px-3 max-sm:even:bg-slate-200 max-sm:odd:bg-slate-300 transition-colors lg:bg-white hover:bg-slate-100">Serviços</a>
-          <a href="#contact" className="px-3 max-sm:even:bg-slate-200 max-sm:odd:bg-slate-300 transition-colors lg:bg-white hover:bg-slate-100">Contato</a>
+          <a href="#home" className="rounded-tl-xl w-[20%] p-3 bg-white odd:bg-slate-300 transition-colors hover:bg-slate-200 
+          lg:text-xl lg:w-[50%] lg:odd:bg-transparent font-bold">Home</a>
+
+          <a href="#about-us" className="w-[20%] p-3 bg-white even:bg-slate-200 transition-colors hover:bg-slate-200 
+          lg:text-xl lg:w-[100%] lg:even:bg-transparent font-bold">Sobre nós</a>
+
+          <a href="#services" className="w-[20%] p-3 bg-white odd:bg-slate-300 transition-colors hover:bg-slate-200 
+          lg:text-xl lg:w-[50%] lg:odd:bg-transparent font-bold">Serviços</a>
+
+          <a href="#contact" className="rounded-bl-xl w-[20%] p-3 bg-white even:bg-slate-200 transition-colors hover:bg-slate-200 
+          lg:w-[50%] lg:text-xl lg:even:bg-transparent font-bold">Contato</a>
+
         </nav>
 
       </div>

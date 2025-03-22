@@ -11,6 +11,9 @@ module.exports = {
         'secondary-color': '#3B56CC',
         'terciary-color': '#5489E6',
         'background-color': '#A2BDD9'
+      },
+      backgroundColor: {
+        'primary-color': '#061637'
       }
     },
     fontFamily: {
