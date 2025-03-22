@@ -133,7 +133,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="bg-slate-800">
-          <h1 className="text-center text-2xl mb-20 text-white lg:text-5xl pt-10">Privacidade e Termos de uso</h1>
+          <h1 className="text-center text-2xl mb-20 text-white lg:text-5xl pt-10">Privacidade e Termos de Uso</h1>
           <span className="flex flex-col items-center mt-10">
             <img src={Logo} alt="logo" className="w-[10em]" />
             <p className="flex items-center justify-center text-white mt-5">2025 <AiOutlineCopyright className="mx-1" /> Todos os direitos reservados</p>
