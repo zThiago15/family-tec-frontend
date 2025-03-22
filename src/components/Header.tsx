@@ -7,18 +7,16 @@ export default function Header() {
   const [showNavBar, setShowNavBar] = useState(false);
 
   return (
-    <header className="fixed z-30 w-full bg-white lg:flex justify-between">
+    <header className="fixed z-30 h-16 w-full lg:flex bg-white justify-between">
 
       <span className="flex justify-between items-center p-2">
         <img src={Logo} alt="logo" className="w-[10em]" />
-        <RxHamburgerMenu className="text-2xl lg:hidden" onClick={() => setShowNavBar(!showNavBar)} />
+        <RxHamburgerMenu className="text-2xl cursor-pointer lg:hidden" onClick={() => setShowNavBar(!showNavBar)} />
 
       </span>
 
-
       <div className={`
         ${showNavBar ? 'block ' : 'hidden'}
-        
         lg:inline-block
         `}>
         <nav 
