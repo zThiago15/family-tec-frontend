@@ -14,17 +14,15 @@ export default function Feedback() {
 
     const saveFeedback = async (e: FormEvent) => {
         e.preventDefault();
-        await createFeedback({ name, feedback, starRating })
-        alert('Feedback enviado')
+        await createFeedback({ name, feedback, starRating });
+        alert('Feedback enviado');
 
         location.reload()
     }
     
     useEffect( () => {
       const getFeedbacks = async () => {
-        const response = await getTopFiveFeedbacks();
-        // console.log(response);
-        setSavedFeedbacks(response)
+
       };
       getFeedbacks();
     }, [])
@@ -35,15 +33,18 @@ export default function Feedback() {
           <h1 className="text-3xl text-primary-color text-center font-bold mb-5 lg:text-5xl">Avaliações</h1>
           <p className="text-2xl text-center lg:text-4xl">Veja as avaliações feitas pelos meus clientes </p>
 
-          {
-            savedFeedbacks.map(({ id, feedback, name, starRating }) => (
-              <div key={id} className="bg-white rounded-3xl w-[80%] m-auto my-5 p-5">
-                <h2 className="text-2xl italic mb">{name}</h2>
-                <StarRatings rating={starRating} starRatedColor="yellow" starDimension="30px" />
-                <p>{feedback}</p>
-              </div>
-            ))
-          }
+          <section className="flex flex-wrap mb-10 ">
+            {
+              savedFeedbacks.map(({ id, feedback, name, starRating }) => (
+                <div key={id} className="bg-white rounded-2xl w-[40%] mx-auto my-5 p-5">
+                  <h2 className="text-2xl italic mb">{name}</h2>
+                  <StarRatings rating={starRating} starRatedColor="yellow" starDimension="30px" />
+                  <p>{feedback}</p>
+                </div>
+              ))
+            }
+          </section>
+          
 
           <button className="w-[60%] mx-[20%] my-8 text-lg p-3 rounded-3xl bg-primary-color text-white" onClick={() => setShowForm(!showForm)}>Já é nosso cliente? Faça uma avaliação</button>
           {

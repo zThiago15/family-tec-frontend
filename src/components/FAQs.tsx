@@ -22,7 +22,7 @@ export default function FAQs(props: FAQsProps) {
           <p className="text-primary-color font-semibold">{question}</p>
           {showAnswer ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
         </button>
-        <span className={`${showAnswer ? 'block' : 'hidden'} overflow-hidden p-2`}>
+        <span className={`${showAnswer ? 'block' : 'hidden'} overflow-hidden p-4`}>
           <p>{answer}</p>
         </span>
 
