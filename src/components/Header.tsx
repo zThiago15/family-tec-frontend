@@ -21,22 +21,22 @@ export default function Header() {
         `}>
         <nav 
           className="
-            text-2xl flex flex-col justify-evenly items-end
+            text-1xl flex flex-col items-end
 
-            lg:h-16  lg:flex-row lg:text-xs lg:underline lg:items-center lg:bg-none
+            lg:h-16 lg:flex-row lg:text-xs lg:underline lg:items-center lg:bg-none
           "  
           onClick={() => setShowNavBar(!showNavBar)}
         >
-          <a href="#home" className="rounded-tl-xl w-[20%] p-3 bg-white odd:bg-slate-300 transition-colors hover:bg-slate-200 
+          <a href="#home" className="w-[30%] rounded-tl-xl p-3 bg-white odd:bg-slate-300 transition-colors hover:bg-slate-200 
           lg:text-xl lg:w-[50%] lg:odd:bg-transparent font-bold">Home</a>
 
-          <a href="#about-us" className="w-[20%] p-3 bg-white even:bg-slate-200 transition-colors hover:bg-slate-200 
+          <a href="#about-us" className="w-[30%] p-3 bg-white even:bg-slate-200 transition-colors hover:bg-slate-200 
           lg:text-xl lg:w-[100%] lg:even:bg-transparent font-bold">Sobre nós</a>
 
-          <a href="#services" className="w-[20%] p-3 bg-white odd:bg-slate-300 transition-colors hover:bg-slate-200 
+          <a href="#services" className="w-[30%] p-3 bg-white odd:bg-slate-300 transition-colors hover:bg-slate-200 
           lg:text-xl lg:w-[50%] lg:odd:bg-transparent font-bold">Serviços</a>
 
-          <a href="#contact" className="rounded-bl-xl w-[20%] p-3 bg-white even:bg-slate-200 transition-colors hover:bg-slate-200 
+          <a href="#contact" className="rounded-bl-xl w-[30%] p-3 bg-white even:bg-slate-200 transition-colors hover:bg-slate-200 
           lg:w-[50%] lg:text-xl lg:even:bg-transparent font-bold">Contato</a>
 
         </nav>
