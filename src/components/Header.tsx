@@ -7,7 +7,7 @@ export default function Header() {
   const [showNavBar, setShowNavBar] = useState(false);
 
   return (
-    <header className="fixed z-30 h-16 w-full lg:flex bg-white justify-between">
+    <header className="sticky z-30 top-0 h-16 w-full lg:flex bg-white justify-between">
 
       <span className="flex justify-between items-center p-2">
         <img src={Logo} alt="logo" className="w-[10em]" />
@@ -16,7 +16,7 @@ export default function Header() {
       </span>
 
       <div className={`
-        ${showNavBar ? 'block ' : 'hidden'}
+        ${showNavBar ? 'block ' : 'hidden'} 
         lg:inline-block
         `}>
         <nav 

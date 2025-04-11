@@ -24,10 +24,10 @@ export default function LandingPage() {
   const [showForm, setShowForm] = useState(false);
 
   return(
-    <div>
+    <div id="home">
       <Header />
-      <main className="pt-16">
-        <section id="home" className="pt-8 lg:flex bg-primary-color items-center ">
+      <main>
+        <section className="pt-8 lg:flex bg-primary-color items-center ">
           <div className="w-full">
             <h1 className="text-white font-bold text-3xl text-center">Conserto de Máquinas Lava e Seca em um só lugar!</h1>
 
@@ -87,7 +87,7 @@ export default function LandingPage() {
 
         </section>
 
-        <section id="services" className="m-8">
+        <section id="services" className="m-8" >
           <h1 className="font-bold text-center text-3xl text-primary-color mb-5 lg:text-5xl">Serviços</h1>
           <p className="text-2xl text-center lg:text-4xl">Especializado em consertos de máquina, realizo serviços de vazamento, fiação e higienização, sou o técnico que irá resolver seu problema!</p>
           <span className="flex flex-col items-center lg:flex-row justify-between lg:items-baseline w-[50%] m-auto">
